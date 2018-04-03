@@ -1,0 +1,37 @@
+Teorie:
+- 20 intrebari, 3 variante de raspuns, una singura corecta, 30 minute, punctare normala (_nu_ grila franceza) -> exact ca la partial
+Relatia R cu coloanele A, B, C; relatia S cu coloanele A, B, D
+S-au cerut numar de coloane si de tupluri (linii) in:
+- join natural
+- join cu conditii (ex: S.A = R.A)
+- join extern stanga
+- join estern dreapta
+- suma elementelor generate intr-o tabela dupa formula (join, group by; pi-sigma-gamma stuff sau descrisa in cuvinte)
+
+R = ABCDE schema de relatie, cu dependentele F = {A->B, B->D, D->A, AE->C}
+- numar de chei
+- proprietati pentru ceva descompuneri (join fara pierderi / cu pastrarea dependentelor / incadrare in forme normale - la noi au fost doar FN3 si FNBC)
+
+Doua query-uri SQL pe tabelele folosite si in cadrul laboratorului:
+- Unde genereaza eroare cererea:
+select d.dname, count(*)
+from emp e, dept d
+where e.deptno > 0
+group by d.deptno;
+
+- ce selecteaza cererea (! exista NULL in lista de manageri la King):
+select ename
+from empwhere empno not in
+(select mgr from emp);
+
+- ceva optimizare de cereri
+- pi_An(pi_Bk(R*S)) =
+a) pi_An(R*S)
+b) pi_Bk(R*S)
+c) pi_(An U Bk) (R*S) (reuniune)
+- select-ul (proiectia) trebuie deplasat in arbore:
+a) spre radacina
+b) spre frunze
+c) depinde de caz
+
+Daca isi mai aduce aminte cineva ceva, e binevenit sa completeze.

@@ -1,0 +1,70 @@
+26 Mai 2011
+Subiectele:
+
+P1:
+Se da:
+* schema de relatie R = ABCDEF
+* cu dependentele functionale F = {A->B, A->F, B->E, D->B, E->A}
+a)
+- calculati o cheie minimala specificand de unde porniti;
+- calculati inchiderea ei in raport cu R;
+- mai sunt si alte chei minimale?
+b)
+- folosind axioma de amplificare si regula de pseudotranzitivitate generati alte reguli care nu se gasesc in F
+- generati cateva astfel de DF (minim 3)
+c)
+- calculati o descompunere in FNBC
+- sa explicitati algoritmul
+- la fiecare pas faceti proiectiile dependentelor functionale de la pasul anterior pe noile scheme generate
+d)
+- descompunerea obtinuta pastreaza dependentele functionale?
+
+P2:
+* pornind de la R si F de la P1
+* avand descompunerea sigma = (AB, BCD, AEF, CDE)
+* sa se verifice daca sigma este o descompunere este cu j.f.p. (jonctiune fara pierderi)
+
+
+P3:
+1) Sa se creeze tabelele: (atentie si la chei si alte minunatii)
+MATRICOLE NOTE
+MATRICOL MATRICOL
+NUME DISCIPLINA
+GRUPA NOTA
+DATA_EX
+* sa se insereze o intrare in tabela 'matricole'
+* in tabela 'note' sa se modifice o nota (datele se citesc de la tastatura)
+
+2) Sa se creeze tabela:
+MEDII
+MATRICOL
+NUME
+GRUPA
+MEDIE_AN
+* media pe an se calculeaza in functie de notele din tabela 'note'
+
+3) Sa se afiseze grupele care au media pe grupa maxima
+antet: GRUPA MEDIA_MAX
+
+4) Sa se afiseze calificative pentru studenti
+antet: GRUPA NUME MEDIA_ANUALA CALIFICATIV
+calificativul se calculeaza:
+nota < 5 => calificativ = 'RESTANTIER'
+5 <= nota < 8 => calificativ = 'BINE'
+nota >= 8 => calificativ = 'FOARTE BINE'
+// operatorii nu stiu daca i-am pus neaparat corect cu < sau <=
+
+5) Sa se scrie un raport de halul:
+-------------------------------------------------------------------------------------
+
+PAG:1 LISTA MEDII data
+
+GRUPA NR_MATRICOL NUME MEDIE_ANUALA
+......
+Numar studenti/grupa
+
+Decan
+-------------------------------------------------------------------------------------
+
+Si mai sunt niste restrictii (astea sunt cam importante):
+* un student poate avea 2 note la acceasi materie, caz in care se ia in considerare numai nota cu data cea mai recenta

@@ -1,0 +1,46 @@
+Probleme / practic / cum i s-o spune:
+Se dadeau doua tabele:
+NOTE - retine toate notele obtinute de studentii unei facultati
+- matricol
+- nume
+- prenume
+- grupa
+- data
+- disciplina
+- nota
+
+MEDII - retine toate mediile obtinute de studentii unei facultati
+- matricol
+- nume
+- prenume
+- medie
+- an_universitar
+- an_studiu
+
+Se cereau:
+1) crearea tabelelor:
+- NOTE cu specificare de chei si tipurile variabilelor + constrangeri (ex: nota intre 4 si 10)
+- MEDII pe baza datelor din tabela note (calcul medie, extras an_studiu din formatul grupei, stuff like that)
+- sa incercati sa modelati si legaturile dintre tabele
+- specificati cum vreti sa reprezentati datele acolo unde e ambiguu (de ex: nota la o disciplina absentata este NULL sau nu este trecuta deloc)
+
+2) o tabela cu elevii de anul 3 din grupele cu media generala (pe grupa) mai mare decat o valoare introdusa de la tastatura
+3) o tabela cu elevii care au absentat cel putin 2 examene
+4) Un formular ge genul:
+pagina titlu data
+GRUPA NUME_PRENUME MEDIA
+........................
+medie: x.xx
+........................
+.
+.
+.
+
+decan
+Se cerea un tabel cu studentii care au obtinut bursa, grupati dupa grupa, sortati crescator pe grupa, descrescator pe medie.
+Data avea format customizat.
+Se cerea media pentru fiecare grupa.
+Student cu bursa = medii peste 8, integralist (a participat la examene toate cele 10 discipline si le-a trecut)
+
+Timp de lucru: 45 minute (pentru multi a fost prea putin)
+Aveti voie cu materiale.
